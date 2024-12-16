@@ -7,8 +7,24 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body class="bg-white text-black flex flex-col justify-center items-center h-screen">
+        <style>
+          @keyframes rainbow {
+              0% { color: red; }
+              10% { color: orange; }
+              20% { color: yellow; }
+              30% { color: lime; }
+              40% { color: green; }
+              50% { color: cyan; }
+              60% { color: blue; }
+              70% { color: indigo; }
+              80% { color: violet; }
+              90% { color: magenta; }
+              100% { color: red; }
+          }
+        </style>
         <main class="max-w-prose mx-auto flex flex-col gap-4">
-            <h1 class="font-black text-7xl">treto.dev</h1>
+            <h1 class="font-black text-7xl hover:animate-[rainbow_2s_linear_infinite] hover:cursor-not-allowed"
+            >treto.dev</h1>
             <h2 class="font-black text-4xl">Association Treto</h2>
             <p>
                 Nous sommes une association à but non lucratif (loi 1901) créée en 2024.
@@ -39,6 +55,10 @@
                     </ul>
                 </article>
             </section>
+
+            <h2 class="font-black text-4xl">Projets</h2>
+            <p>Ci-dessous quelques expériences récentes (ou pas), à deux ou en solo.</p>
+            <p>Note : certaines de ces expériences datent d'avant la création de Treto mais reflètent malgré tout le champ des compétences recouvert par Lucie et Fabien.<p>
         </main>
     </body>
 </html>
